@@ -55,6 +55,7 @@
 ====================================== */
 
 body {font-family: 'Roboto', sans-serif; font-size: 16px;color: #696969;font-weight:300;line-height:25px;width: 100%; overflow-x: hidden}
+
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {line-height: 1.2; font-weight: 500; font-family: 'Poppins', sans-serif; color: #3e3939;}
 a, *::before, *::after, img, span, input, button, .navbar, .fixedmenu, .tp-bullet, .owl-dot, .owl-prev, .owl-next {transition: ease-in-out 0.2s;-webkit-transition: ease-in-out 0.2s;-moz-transition: ease-in-out 0.2s;-ms-transition: ease-in-out 0.2s;-o-transition: ease-in-out 0.2s;}
 section,.section-padding {position: relative;overflow: hidden;}
@@ -555,15 +556,16 @@ blockquote > cite {font-weight: 400;font-size: 14px;display: block;}
       About Us
   ==================================== */
 
-.heading-area .title{
+  .heading-area .title {
     font-size: 3.2rem;
     margin-bottom: 25px;
 }
 
-.heading-area .sub-title{
+.heading-area .sub-title {
     margin-bottom: 15px;
 }
 
+/* Estilos para los puntos */
 .dot-box:after {
     content: "";
     position: absolute;
@@ -580,51 +582,88 @@ blockquote > cite {font-weight: 400;font-size: 14px;display: block;}
     transform: rotate(45deg);
 }
 
+/* Estilos para los elementos de características */
 .feature-item {
-    margin-right: 20px;
-    padding: 30px 25px;
-    border-radius:10px;
+    margin-bottom: 20px;
+    padding: 20px 15px; 
+    border-radius: 10px;
     text-align: left;
     background-color: #fff;
     -webkit-box-shadow: 0px 0px 10px 1px rgba(145, 140, 145, 0.35);
     -moz-box-shadow: 0px 0px 10px 1px rgba(145, 140, 145, 0.35);
     box-shadow: 0px 0px 8px 1px rgba(145, 140, 145, 0.35);
+    width: calc(100% - 40px); 
+    max-width: 300px; 
 }
 
-.feature-item:nth-child(2){
-    margin-top: 23px;
-}
-
-.feature-item > i.f-icon{
-    font-size: 28px;
-    height: 55px;
-    width: 55px;
-    line-height: 55px;
-    background-color: #35ab39;
-    display: inline-block;
-    vertical-align: middle;
-    text-align: center;
-    border-radius: 50px;
-    color: #fff;
+.feature-item > i.f-icon {
+    font-size: 24px; 
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
 }
 
 .feature-item .title {
-    margin: 1.5rem 0 .8rem;
+    margin: 1rem 0 .5rem; 
 }
 
-.feature-item .r-icon{
-    font-size: 25px;
-    font-weight: 900;
-    display: block;
-    text-align: right;
-    color: #d5d3d3;
+.feature-item .r-icon {
+    font-size: 20px; 
 }
 
-.feature-item p{
-    margin-bottom: 15px;
-    font-size: 14px;
+.feature-item p {
+    margin-bottom: 10px; 
+    font-size: 12px; 
 }
 
+.feature-item img {
+    max-height: 150px;
+}
+
+/* Estilos para el contenedor de características */
+.features-box {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+/* Estilos para los diplomas */
+.diploma {
+    display: block; 
+    margin: 0 auto 20px; 
+    width: 100%;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    z-index: 1; 
+}
+
+.diploma:hover {
+    transform: scale(2); 
+    margin-bottom: 0; 
+}
+
+/* Estilos para la barra de desplazamiento */
+.features-box::-webkit-scrollbar {
+    width: 10px; 
+}
+
+/* Estilo del riel de la barra de desplazamiento */
+.features-box::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+/* Estilo del pulgar de la barra de desplazamiento */
+.features-box::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 5px; 
+}
+
+/* Estilo del pulgar de la barra de desplazamiento al pasar el cursor sobre él */
+.features-box::-webkit-scrollbar-thumb:hover {
+    background: #4cae4c; 
+}
 
 /* ===================================
     Services
