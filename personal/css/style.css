@@ -1004,7 +1004,7 @@ blockquote > cite {font-weight: 400;font-size: 14px;display: block;}
 }
 
 .bg-map{
-    background: url("../img/map.jpg");
+    background: url("../img/map2.jpg") no-repeat;
 }
 
 .address-item {
@@ -1020,15 +1020,31 @@ blockquote > cite {font-weight: 400;font-size: 14px;display: block;}
 }
 
 .address-item li{
-    width: 50%;
+    width: 100%;
     display: flex;
     float: left;
     align-items: center;
+    margin-bottom: 50px !important;
+
 }
 
 .address-item i{
     font-size: 35px;
     margin-right:20px;
+}
+
+
+.address-item li:last-child {
+    margin-bottom: 0; 
+}
+
+.address-item a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.address-item a:hover {
+    color: #007bff;
 }
 
 
