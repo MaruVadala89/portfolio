@@ -746,7 +746,7 @@ blockquote > cite {font-weight: 400;font-size: 14px;display: block;}
 }
 
 .cba-item .portfolio-descripcion {
-    font-weight: bold;
+    font-weight: bold ;
     color:red;
  }
 
