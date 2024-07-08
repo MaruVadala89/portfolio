@@ -619,79 +619,83 @@ blockquote > cite {font-weight: 400;font-size: 14px;display: block;}
     Services
 ====================================== */
 
-.services-skill li{
+.services-skill li {
     list-style: none;
     margin-top: 25px;
 }
 
-.services-skill .progress{
+.services-skill .progress {
     border-radius: 50px;
     height: 13px;
 }
 
-.services-skill .progress-bar{
+.services-skill .progress-bar {
     border-radius: 50px;
     background-color: #35ab39;
 }
 
-.progress-item b{
+.progress-item b {
     font-weight: 600;
 }
 
-.counter-area{
+.counter-area {
     margin-top: 3.5rem;
     display: flex;
     align-content: center;
     justify-content: space-between;
 }
 
-.counter-area .counters .content{
+.counter-area .counters .content {
     display: inline-block;
 }
 
-.counter-area .counters .c-icon{
+.counter-area .counters .c-icon {
     font-size: 40px;
     margin-right: 15px;
     color: #35ab39;
 }
 
-.services-about{
+.services-about {
     height: 550px;
     width: 100%;
-    display: block;
-    position: relative;
-    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding-top: 10px;
     background-image: url(data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAJUlEQVQoU2N8+vTpfwYGBgZpaWlGEI0LMBKtEJ8pyHJ4rRtVCAAd/QgLwKUsAgAAAABJRU5ErkJggg==)!important;
     background-position: 0 0px!important;
     background-repeat: repeat!important;
-    right: 0;
-    z-index: -1;
     background-size: 15px;
+    position: relative;
 }
 
-
-.services-about .service-image{
-    float: right;
-    max-width: 450px;
+.services-about .service-image {
+    max-width: 50%;
+    height: auto;
+    margin-bottom: 20px; /* Separación entre la imagen y el párrafo */
 }
 
-.services-about .content{
-    position: absolute;
-    background-color:#35ab39;
-    bottom: 0;
-    left: 0;
-    max-width: 500px;
+.services-about .content {
+    background-color: #35ab39;
     color: #fff;
-    padding: 50px;
-    text-align: left;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    position: relative;
 }
 
-.services-about .content h5{
+.services-about .content p {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.services-about .content h5 {
+    margin-top: 10px;
     color: #fff;
 }
 
-.services-about .content:before{
+.services-about .content:before {
     content: "\f10d";
     font-family: "Font Awesome 5 Free";
     font-size: 230px;
@@ -708,7 +712,8 @@ blockquote > cite {font-weight: 400;font-size: 14px;display: block;}
    ====================================== */
 
 #js-grid-mosaic-flat{
-    min-height: 600px;
+   min-height: 500px;
+
 }
 
 #js-grid-mosaic-flat .p-icon{
@@ -739,6 +744,13 @@ blockquote > cite {font-weight: 400;font-size: 14px;display: block;}
     bottom: 10px;
     left: 20px;
 }
+
+.cba-item .portfolio-descripcion {
+    font-weight: bold;
+    color:red;
+ }
+
+
 
 /* ===================================
       Clients
@@ -1182,6 +1194,13 @@ blockquote > cite {font-weight: 400;font-size: 14px;display: block;}
     }
     .side-menu {
         width: 380px;
+    }
+    .services-about {
+        padding: 40px; /* Añadir padding para mayor separación */
+    }
+
+    .services-skill {
+        padding-bottom: 20px; /* Espacio extra para el último progress item */
     }
 
 }
