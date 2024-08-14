@@ -63,7 +63,7 @@ section,.section-padding {position: relative;overflow: hidden;}
 a {color:inherit;text-decoration: none;}
 .rev_slider_wrapper{width: 100% !important;}
 .btn.focus, .btn:focus{box-shadow: none;}
-p:last-child{margin-bottom: 0 !important; display: flex;}
+p:last-child{margin-bottom: 0 !important;}
 .fa, .far, .fas{display: inline;}
 a:active, a:hover{color: #35ab39;}
 blockquote {border-left: 2px solid;padding: 10px 15px 10px 35px;margin: 25px 0;font-size: 18px;line-height: 28px;margin-top: 32px;margin-bottom: 32px;}
@@ -126,7 +126,7 @@ blockquote > cite {font-weight: 400;font-size: 14px;display: block;}
 .bg-purple {background-color: #9556f5;}
 
 /* text-color */
-.main-color{color: #35ab39; display: flex;}
+.main-color{color: #35ab39;}
 
 /*Max Width*/
 .mx-570{
